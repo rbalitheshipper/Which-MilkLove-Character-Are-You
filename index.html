@@ -26,12 +26,12 @@
         }
 
         .container {
-            background: rgba(171, 245, 145, 0.5);
+            background: rgba(182, 241, 161, 0.5);
             width: 100%;
             max-width: 700px;
             border-radius: 20px;
             padding: 30px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 10px 25px rgba(30, 161, 23, 0.15);
         }
 
         .top-bar {
@@ -47,13 +47,14 @@
             border: none;
             cursor: pointer;
             font-size: 0.9rem;
-            background: #ffffffaa;
+            color: #d79dcc;
+            background: #396c2f89;
         }
 
         h1 {
             text-align: center;
             margin-bottom: 10px;
-            color: #ff8ee8;
+            color: #ff4f9a;
         }
 
         .subtitle {
@@ -141,7 +142,6 @@
             <div></div>
             <button class="lang-toggle" onclick="toggleLanguage()" id="langBtn">TH</button>
         </div>
-
         <div id="quiz-container">
             <h1 id="main-title">Which MilkLove Character Are You?</h1>
             <p class="subtitle" id="subtitle">Answer 15 questions to find out!</p>
@@ -296,14 +296,18 @@
                     {
                         text: {
                             en: "Buy them their favorite snack hoping it helps cheer them up a little", th: "ซื้อขนมที่พวกเขาชอบให้ หวังว่ามันจะช่วยให้พวกเขารู้สึกดีขึ้นบ้าง"
-                        }, points: "wan"
+                        }, points: "dear"
                     },
                     {
                         text: {
                             en: "Point out they have been very silent", th: "ชี้ให้เห็นว่าพวกเขาเงียบมาก"
                         }, points: "gorya"
                     },
-                    { text: { en: "Give them company and try to keep the conversations light and humorous", th: "อยู่เป็นเพื่อนพวกเขาและพยายามทำให้บทสนทนาสนุกสนานและมีอารมณ์ขัน" }, points: "meawnam" }
+                    {
+                        text: {
+                            en: "Stay with them in case they need a friend.", th: "อยู่เป็นเพื่อนพวกเขาเผื่อว่าพวกเขาต้องการเพื่อน"
+                        }, points: "rafah"
+                    }
                 ]
             },
             {
@@ -343,8 +347,8 @@
                     },
                     {
                         text: {
-                            en: "Try to spend time/ flirt with them and see how they react", th: "ลองใช้เวลาอยู่กับพวกเขาหรือลองหยอกล้อดู แล้วสังเกตปฏิกิริยาของพวกเขา"
-                        }, points: "ink"
+                            en: "Follow them on socials and try to start a conversation", th: "ติดตามพวกเขาในโซเชียลมีเดียและลองเริ่มบทสนทนาดู"
+                        }, points: "oongsa"
                     },
                     {
                         text: {
@@ -353,8 +357,8 @@
                     },
                     {
                         text: {
-                            en: "I'll be watching for confirmation signals, but I probably don't want to ask directly.", th: "ฉันจะคอยสังเกตสัญญาณยืนยัน แต่คงไม่อยากถามโดยตรง"
-                        }, points: "pa"
+                            en: "I will eventually confess", th: "ในที่สุดฉันก็จะสารภาพ"
+                        }, points: "sun"
                     }
                 ]
             },
@@ -367,7 +371,7 @@
                     {
                         text: {
                             en: "Skip dinner, go to sleep.", th: "ไม่ต้องกินข้าวเย็น เข้านอนเลย"
-                        }, points: "pa"
+                        }, points: "rafah"
                     },
                     {
                         text: {
@@ -382,7 +386,91 @@
                     {
                         text: {
                             en: "Just heat up whatever's leftover from lunch", th: "แค่อุ่นอาหารที่เหลือจากมื้อเที่ยงก็พอแล้ว"
+                        }, points: "dear"
+                    }
+                ]
+            },
+            {
+                question: {
+                    en: "When your crush asks for help from you. How do you feel?",
+                    th: "เมื่อคนที่คุณแอบชอบขอความช่วยเหลือจากคุณ คุณมักจะตอบสนองอย่างไร?"
+                },
+                options: [
+                    {
+                        text: {
+                            en: "Oh no, oh no, she might find out. Did she?", th: "โอ้ ไม่นะ โอ้ ไม่นะ เธออาจจะรู้เข้าก็ได้ เธอรู้แล้วหรือเปล่า?"
+                        }, points: "oongsa"
+                    },
+                    {
+                        text: {
+                            en: "Oh nice, we might get to know each other!", th: "โอ้ ดีจังเลย เราอาจจะได้รู้จักกันก็ได้นะ!"
+                        }, points: "sun"
+                    },
+                    {
+                        text: {
+                            en: "Okay, I got this. My time to shine!", th: "โอเค ฉันทำได้แล้ว ถึงเวลาที่ฉันจะโชว์ฝีมือแล้ว!"
                         }, points: "ink"
+                    },
+                    {
+                        text: {
+                            en: "oh god please don't let me fumble infront of her again", th: "โอ้ พระเจ้า โปรดอย่าให้ฉันต้องพลาดพลั้งต่อหน้าเธออีกเลย"
+                        }, points: "pa"
+                    }
+                ]
+            },
+            {
+                question: {
+                    en: "Two of your classmates/colleagues have gotten into an argument, what do you do?",
+                    th: "เพื่อนร่วมชั้น/เพื่อนร่วมงานของคุณสองคนทะเลาะกัน คุณจะทำอย่างไร?"
+                },
+                options: [
+                    {
+                        text: {
+                            en: "Calm them down before it escalates.", th: "ช่วยทำให้พวกเขาสงบลงก่อนที่สถานการณ์จะบานปลาย"
+                        }, points: "ink"
+                    },
+                    {
+                        text: {
+                            en: "I don't want to overstep in their personal matters", th: "ฉันไม่อยากเข้าไปยุ่งเกี่ยวกับเรื่องส่วนตัวของพวกเขา"
+                        }, points: "pa"
+                    },
+                    {
+                        text: {
+                            en: "Unless I know them, it is not relevent to me.", th: "ถ้าฉันไม่รู้จักพวกเขา เรื่องนั้นก็ไม่เกี่ยวข้องกับฉัน"
+                        }, points: "shasha"
+                    },
+                    {
+                        text: {
+                            en: "Try to ignore it as long as no one is in danger", th: "พยายามอย่าไปสนใจตราบใดที่ไม่มีใครตกอยู่ในอันตราย"
+                        }, points: "gorya"
+                    }
+                ]
+            },
+            {
+                question: {
+                    en: "You just got a big bonus, what is the first thing you do with it?",
+                    th: "คุณเพิ่งได้รับโบนัสก้อนใหญ่ สิ่งแรกที่คุณจะทำคืออะไร?"
+                },
+                options: [
+                    {
+                        text: {
+                            en: "Spoil myself a little", th: "ให้รางวัลตัวเองสักหน่อย"
+                        }, points: "rafah"
+                    },
+                    {
+                        text: {
+                            en: "Put some aside for savings", th: "กันเงินส่วนหนึ่งไว้สำหรับการออม"
+                        }, points: "dear"
+                    },
+                    {
+                        text: {
+                            en: "Clear out any bills and stock up on supplies", th: "เคลียร์บิลต่างๆ และตุนของไว้"
+                        }, points: "wan"
+                    },
+                    {
+                        text: {
+                            en: "Put it aside for use later", th: "เก็บไว้ใช้ภายหลัง"
+                        }, points: "meawnam"
                     }
                 ]
             }
